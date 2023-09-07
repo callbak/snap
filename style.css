@@ -1,0 +1,861 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+body {
+    /** flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /** text properties */
+    font-family: 'Epilogue', sans-serif;
+    /** styling properties */
+    background-color: hsl(0, 0%, 98%);
+}
+
+/*! Navigational Bar --------------------------------------------------------------------------------*/
+.navbar {
+    width: 1400px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.offcanvas-body .nav-item a {
+    color: hsl(0, 0%, 41%);
+}
+
+.offcanvas-body .nav-item a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.offcanvas-body #nis1 {
+    /** control properties */
+    margin-left: 30px;
+}
+
+.offcanvas-body #nis1 .nav-item {
+    /** control properties */
+    margin-left: 18px;
+}
+
+.offcanvas-body #nis1 #Features img {
+    /** control properties */
+    margin-right: 10px;
+}
+
+.offcanvas-body #nis1 {
+    font-size: 14px;
+}
+
+.offcanvas-body #nis2 button {
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+}
+
+.offcanvas-body #nis2 #btn1 {
+    /** control properties */
+    margin-right: 15px;
+    /** styling properties */
+}
+
+.offcanvas-body #nis2 #btn1 button:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.offcanvas-body #nis2 #btn2 button {
+    /** styling properties */
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 13px;
+}
+
+.offcanvas-body #nis2 #btn2 button:hover {
+    color: hsl(0, 0%, 8%);
+    border-color: hsl(0, 0%, 8%);
+}
+
+
+/*! Body Content --------------------------------------------------------------------------------*/
+
+.Body_Content {
+    /** grid properties */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Create 2 equal-sized columns */
+    grid-template-rows: repeat(3, 1fr);
+    /* Create 3 equal-sized rows */
+    /** control properties */
+    width: 1400px;
+    height: 700px;
+    margin-right: 35px;
+    /** styling properties */
+}
+
+.Body_Content #hdk {
+    /** grid properties */
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /** control properties */
+    height: 650px;
+    width: 500px;
+    margin-left: 90px;
+}
+
+.Body_Content #headerT {
+    /** grid properties */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /** control properties */
+    width: 520px;
+    margin-top: 110px;
+    margin-left: 170px;
+}
+
+.Body_Content h1 {
+    /** text properties */
+    font-size: 78px;
+    font-weight: 700;
+    /** styling properties */
+    color: hsl(0, 0%, 8%);
+}
+
+.Body_Content #pRGH {
+    /** control properties */
+    width: 400px;
+    margin-left: 170px;
+    margin-top: 40px;
+    /** grid properties */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.Body_Content p {
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+
+.Body_Content #BTNC {
+    /** grid properties */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /** control properties */
+    margin-left: 170px;
+    margin-top: 165px;
+}
+
+.Body_Content button {
+    /** control properties*/
+    height: 47px;
+    width: 150px;
+    /** styling properties */
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+.Body_Content button:hover {
+    /** styling properties */
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.Body_Content #wmC {
+    /** flex properties */
+    display: flex;
+    flex-direction: row;
+    /** grid properties */
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /** control properties */
+    margin-left: 145px;
+    margin-top: 70px;
+}
+
+.Body_Content #wmC span {
+    /** control properties */
+    margin-left: 25px;
+}
+
+.Body_Content #wmC #dbz {
+    height: 20px;
+    width: 112px;
+}
+
+.Body_Content #wmC #adph {
+    height: 38px;
+    width: 80px;
+}
+
+.Body_Content #wmC #mt {
+    height: 22px;
+    width: 90px;
+}
+
+.Body_Content #wmC #mkr {
+    height: 25px;
+    width: 88px;
+}
+
+
+.attribution {
+    margin-top: 20px;
+    /** text properties */
+    font-weight: 800;
+}
+
+/*! Media Queries */
+
+@media (max-width:1383px) {
+    .navbar {
+        width: 1200px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 1200px;
+        height: 600px;
+        margin-right: 250px;
+        /** styling properties */
+    }
+
+}
+
+@media (max-width:1182px) {
+    .navbar {
+        width: 1000px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 1000px;
+        height: 600px;
+        margin-right: 250px;
+        /** styling properties */
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        height: 530px;
+        width: 400px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        width: 428px;
+        margin-top: 50px;
+        margin-left: 170px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 65px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        width: 350px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:980px) {
+    .navbar {
+        width: 900px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 900px;
+        margin-right: 280px;
+        /** styling properties */
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        height: 490px;
+        width: 360px;
+        margin-left: 40px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        width: 285px;
+        margin-top: 30px;
+        margin-left: 170px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 43px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        width: 350px;
+        font-size: 14px;
+    }
+
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-left: 170px;
+        margin-top: 140px;
+    }
+
+    .Body_Content button {
+        /** control properties*/
+        height: 37px;
+        width: 140px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 140px;
+        margin-top: 45px;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 15px;
+        width: 107px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 33px;
+        width: 75px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 17px;
+        width: 85px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 20px;
+        width: 83px;
+    }
+
+}
+
+
+@media (max-width:880px) {
+    .navbar {
+        width: 750px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 750px;
+        margin-right: 280px;
+        /** styling properties */
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        height: 450px;
+        width: 320px;
+        margin-left: 25px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        width: 285px;
+        margin-top: 30px;
+        margin-left: 170px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 43px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        margin-top: 20px;
+    }
+
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-top: 120px;
+    }
+
+    .Body_Content button {
+        /** control properties*/
+        height: 32px;
+        width: 135px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 140px;
+        margin-top: 15px;
+        width: 270px;
+        height: 100px;
+        /** flex properties */
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 10px;
+        width: 102px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 27px;
+        width: 70px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 12px;
+        width: 80px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 15px;
+        width: 77px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .navbar {
+        width: 700px;
+    }
+
+    .Body_Content {
+        /** flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /** control properties */
+        width: 700px;
+        height: 1200px;
+        margin-right: 280px;
+        /** styling properties */
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        height: 630px;
+        width: 600px;
+        margin-left: 188px;
+        margin-top: 200px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        width: 450px;
+        margin-top: 65px;
+        margin-left: 280px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 45px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        margin-top: 50px;
+        margin-left: 280px;
+        width: 420px;
+        /** text properties */
+        text-align: center;
+    }
+
+    .Body_Content p {
+        font-size: 28px;
+    }
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-top: 80px;
+        margin-left: 400px;
+    }
+
+    .Body_Content button {
+        /** control properties*/
+        height: 57px;
+        width: 160px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 223px;
+        margin-top: 70px;
+        width: 500px;
+        height: 450px;
+        padding-bottom: 40px;
+        /** flex properties */
+        flex-direction: row;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 10px;
+        width: 102px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 27px;
+        width: 70px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 12px;
+        width: 80px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 15px;
+        width: 77px;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 200px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:680px) {
+    .navbar {
+        width: 550px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 550px;
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        width: 550px;
+        margin-left: 139px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        width: 450px;
+        margin-top: 65px;
+        margin-left: 202px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        margin-left: 210px;
+        width: 420px;
+        /** text properties */
+        text-align: center;
+    }
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-left: 330px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 152px;
+        margin-top: 70px;
+        width: 500px;
+        height: 450px;
+        padding-bottom: 40px;
+        /** flex properties */
+        flex-direction: row;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 10px;
+        width: 102px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 27px;
+        width: 70px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 12px;
+        width: 80px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 15px;
+        width: 77px;
+    }
+}
+
+
+
+@media (max-width:552px) {
+    .navbar {
+        width: 450px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 450px;
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        margin-top: 20px;
+        width: 420px;
+        height: 540px;
+        margin-left: 157px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        margin-left: 203px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 35px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        margin-left: 180px;
+        width: 380px;
+        /** text properties */
+        text-align: center;
+    }
+
+    .Body_Content p {
+        font-size: 18px;
+    }
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-top: 30px;
+        margin-left: 280px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 140px;
+        margin-top: 70px;
+        width: 430px;
+        height: 400px;
+        /** flex properties */
+        flex-direction: row;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 8px;
+        width: 100px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 25px;
+        width: 68px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 10px;
+        width: 78px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 13px;
+        width: 75px;
+    }
+
+    .attribution {
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:426px) {
+    .navbar {
+        width: 350px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 350px;
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        margin-top: 20px;
+        width: 330px;
+        height: 445px;
+        margin-left: 150px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        margin-left: 180px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 30px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        margin-left: 160px;
+        width: 320px;
+        /** text properties */
+        text-align: center;
+    }
+
+    .Body_Content p {
+        font-size: 15px;
+    }
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-top: 30px;
+        margin-left: 240px;
+    }
+
+    .Body_Content button {
+        /** control properties*/
+        height: 35px;
+        width: 145px;
+        font-size: 13px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 150px;
+        margin-top: 70px;
+        width: 300px;
+        height: 150px;
+        /** flex properties */
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 8px;
+        width: 100px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 25px;
+        width: 68px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 10px;
+        width: 78px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 13px;
+        width: 75px;
+    }
+}
+
+
+
+@media (max-width:336px) {
+    .navbar {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .Body_Content {
+        /** control properties */
+        width: 300px;
+    }
+
+    .Body_Content #hdk {
+        /** control properties */
+        margin-top: 20px;
+        width: 300px;
+        height: 415px;
+        margin-left: 139px;
+    }
+
+    .Body_Content #headerT {
+        /** control properties */
+        margin-left: 153px;
+    }
+
+    .Body_Content h1 {
+        /** text properties */
+        font-size: 29px;
+    }
+
+    .Body_Content #pRGH {
+        /** control properties */
+        margin-left: 150px;
+        width: 280px;
+        /** text properties */
+        text-align: center;
+    }
+
+    .Body_Content #BTNC {
+        /** control properties */
+        margin-left: 216px;
+    }
+
+    .Body_Content button {
+        /** control properties*/
+        height: 35px;
+        width: 145px;
+        font-size: 13px;
+    }
+
+    .Body_Content #wmC {
+        /** control properties */
+        margin-left: 128px;
+        margin-top: 70px;
+        width: 290px;
+        height: 150px;
+        /** flex properties */
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Body_Content #wmC #dbz {
+        height: 8px;
+        width: 100px;
+    }
+
+    .Body_Content #wmC #adph {
+        height: 25px;
+        width: 68px;
+    }
+
+    .Body_Content #wmC #mt {
+        height: 10px;
+        width: 78px;
+    }
+
+    .Body_Content #wmC #mkr {
+        height: 13px;
+        width: 75px;
+    }
+}
